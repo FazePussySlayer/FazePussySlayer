@@ -1,0 +1,111 @@
+html{
+    font-size: 30px;
+    font-family: "Geared Slab", Arial;
+    color: black;
+}
+
+body {
+    background-color: #000791;
+    padding: .25% 1% 1% 1%;
+    }
+
+div{
+    background-color:white;
+    height: 1000px;/* you will have to adjust this to the chrombooks */
+     -webkit-user-select: none;
+
+}
+
+h1{
+    font-size: 30px;
+    padding: 1% 1.5% 1.25% 1.5%;
+    /*Tack on another font option if the chromies dont support GEARED SLAB*/
+}
+
+.startPos{
+    display: inline-block;
+    text-decoration: none;
+    width:69.2%;
+    text-align:right;
+}
+
+p{
+    padding: 0% 1% 1% 1%; 
+}
+
+.low{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0% 0% 0% 6%;
+    text-align: left;
+}
+
+.mid{
+     display: inline-block;
+    text-decoration: none;
+    width:75%;
+    text-align: center;
+}
+
+.high{
+     display: inline-block;
+    text-decoration: none;
+    text-align: right;
+}
+
+btn{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: gray;
+    border: 3px solid black;
+    position: relative;
+}
+
+btn:hover {
+    background-color: #ddd;/* change color maybe*/
+    color: black;
+}
+
+.display{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 3px solid black;
+    box-sizing: border-box;
+    padding-top: .5%;
+    padding-bottom: .55%;
+   
+}
+.lowDis{
+    left: -.1%;
+     width: 4%
+}
+.midDis{
+    left: 27.5%;
+    width: 4%;
+}
+.highDis{
+    left: 55.5%;
+    width: 4%;
+}
+.lowDec{
+    left:5%;
+}
+.lowInc{
+    left: 8.1%;
+}
+.midDec{
+    left: 32.6%;
+}
+.midInc{
+    left: 35.6%;
+}
+.highInc{
+    left: 63.5%;
+}
+.highDec{
+ left:60.5%;   
+}
