@@ -4,26 +4,43 @@
 	<title>Scouting Code</title>
     <link rel="stylesheet" href="CSS.css">
     <script src="JavaScrip.js"></script>
-   
+    
 </head>
 <body>
-<div unselectable = "on">
-<h1>Team Number: [Insert Number]<span class="startPos">Starting Position: [Insert Position Box]</span></h1>
-<p>
-<span class="low">Low Ball</span><span class="mid">Mid Ball</span><span class="high">High Ball</span>    
-</p>
-   <btn type="button" class="lowDec" onclick = "decreaseLow()">&#60;</btn>
-   <btn type="button" class="lowInc" onclick = "increaseLow()">&#62;</btn>
-    <p2 href="#" class = "display lowDis" id="low">0</p2>
+
+
+    <div class = "container">
+    <div class="teamNum">Team Number: [Insert Number]</div>
+    <div class="startPos">Starting Position: [Insert Position Box]</div>
+    </div>
+
+    <div class = "low">Low Ball
+    <div class="buttonDiv">
+    <btn type="button" class="lowDec" onclick = "decreaseLow()">&#60;</btn>
+        <div href="#" class = "display lowDis" id="low">0</div>
+    <btn type="button" class="lowInc" onclick = "increaseLow()">&#62;</btn>
     
-   <btn type="button" class="midDec" onclick = "decreaseMid()">&#60;</btn>
+    </div>    
+    </div>
+    
+    
+   <!-- <div>
+        <span class="mid">Mid Ball</span>
+    <div><btn type="button" class="midDec" onclick = "decreaseMid()">&#60;</btn>
    <btn type="button" class="midInc" onclick = "increaseMid()">&#62;</btn>
    <p3 href="#" class = "display midDis"id="mid">0</p3>
+    </div>
+    </div>
     
-   <btn type="button" class="highDec" onclick = "decreaseHigh()">&#60;</btn>
-   <btn type="button" class="highInc" onclick = "increaseHigh()">&#62;</btn>
-   <p4 href="#" class = "display highDis"id="high">0</p4>
-</div>
+    
+    <div>
+        <span class="high">High Ball</span>
+    <div>
+        <btn type="button" class="highDec" onclick = "decreaseHigh()">&#60;</btn>
+        <btn type="button" class="highInc" onclick = "increaseHigh()">&#62;</btn>
+        <p4 href="#" class = "display highDis"id="high">0</p4></div>
+    </div>
+--> 
 </body>
 
 </html>
