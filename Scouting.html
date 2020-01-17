@@ -7,40 +7,48 @@
     
 </head>
 <body>
-
-
     <div class = "container">
-    <div class="teamNum">Team Number: [Insert Number]</div>
-    <div class="startPos">Starting Position: [Insert Position Box]</div>
+        <div class="teamNum">Team Number: 2875</div>
+        <div class="startPos">Starting Position: Middle</div>
     </div>
-
-    <div class = "low">Low Ball
-    <div class="buttonDiv">
-    <btn type="button" class="lowDec" onclick = "decreaseLow()">&#60;</btn>
-        <div href="#" class = "display lowDis" id="low">0</div>
-    <btn type="button" class="lowInc" onclick = "increaseLow()">&#62;</btn>
+    <div class = "container">
+        <div class = "low">Low Ball
+            <div class="buttonDiv">
+                <btn type="button" class="lowDec" onclick = "decreaseLow()">&#60;</btn>
+                <div href="#" class = "display lowDis" id="low">0</div>
+                <btn type="button" class="lowInc" onclick = "increaseLow()">&#62;</btn>
+            </div>    
+        </div>
     
-    </div>    
+        <div class = "high">High Ball
+            <div class="buttonDiv">
+                <btn type="button" class="highDec" onclick = "decreaseHigh()">&#60;</btn>
+                <div href="#" class = "display highDis" id="high">0</div>
+                <btn type="button" class="highInc" onclick = "increaseHigh()">&#62;</btn>
+            </div>    
+        </div>
     </div>
     
-    
-   <!-- <div>
-        <span class="mid">Mid Ball</span>
-    <div><btn type="button" class="midDec" onclick = "decreaseMid()">&#60;</btn>
-   <btn type="button" class="midInc" onclick = "increaseMid()">&#62;</btn>
-   <p3 href="#" class = "display midDis"id="mid">0</p3>
+   
+    <div class="controlPanel"> 
+        Control Pannel <!-- Maybe add an underline? -->
+        <div class = "container">
+            <div class = "rotationalControl">
+                Rotational Control
+                <div class = "table">
+                    <table>
+                            <tr>
+                                <th>Trial #</th>
+                                <th>Time</th>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+            <div class = "colorSelection">
+                 Color Selection
+            </div>
+        </div>
     </div>
-    </div>
-    
-    
-    <div>
-        <span class="high">High Ball</span>
-    <div>
-        <btn type="button" class="highDec" onclick = "decreaseHigh()">&#60;</btn>
-        <btn type="button" class="highInc" onclick = "increaseHigh()">&#62;</btn>
-        <p4 href="#" class = "display highDis"id="high">0</p4></div>
-    </div>
---> 
 </body>
 
 </html>

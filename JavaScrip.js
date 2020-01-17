@@ -13,15 +13,6 @@ function decreaseLow() {
 function increaseLow(){
     document.getElementById("low").innerHTML = ++lowCounter;
 }
-function decreaseMid() {  
-    if(midCounter != 0)
-        {
-            document.getElementById("mid").innerHTML = --midCounter;
-        }
-}
-function increaseMid(){
-    document.getElementById("mid").innerHTML = ++midCounter;
-}
 function decreaseHigh() {  
     if(highCounter != 0)
         {
