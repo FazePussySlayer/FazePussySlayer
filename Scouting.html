@@ -4,7 +4,6 @@
 	<title>Scouting Code</title>
     <link rel="stylesheet" href="CSS.css">
     <script src="JavaScrip.js"></script>
-    
 </head>
 <body>
     <div class = "container">
@@ -38,17 +37,57 @@
                 <div class = "table">
                     <table>
                             <tr>
-                                <th>Trial #</th>
+                                <th>Trial</th>
                                 <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td id = "rotTrialNum"></td>
+                                <th>
+                                    <div id="timerContainer">
+                                         <div class="timer"></div>
+                                    </div>
+                                    <script type="text/javascript" src="JavaScrip.js"></script>
+                                </th>
                             </tr>
                     </table>
                 </div>
+                <div class="container btn">
+                   <btn type="button" class="startButton timer" onclick="startRotTrial();">Start</btn><!--addField()-->
+                    <btn type="button" class="startButton stopButton pauseTimer" onclick = "stopRotTrial()">Stop</btn>
+                </div>
             </div>
-            <div class = "colorSelection">
-                 Color Selection
+            
+            
+            
+        <div class = "container">
+            <div class = "colorControl">
+                Color Control
+                <div class = "table">
+                    <table>
+                            <tr>
+                                <th>Trial</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td id = "colTrialNum"></td>
+                                <th>
+                                    <div id="timerContainer2">
+                                         <div class="timer2"></div>
+                                    </div>
+                                    <script type="text/javascript" src="JavaScrip.js"></script>
+                                </th>
+                            </tr>
+                    </table>
+                </div>
+                <div class="container btn">
+                   <btn type="button" class="startButton timer" onclick="startColTrial();">Start</btn><!--addField()-->
+                    <btn type="button" class="startButton stopButton pauseTimer" onclick = "stopColTrial()">Stop</btn>
+                </div>
             </div>
+            
         </div>
-    </div>
+    
+       
 </body>
 
 </html>

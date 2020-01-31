@@ -1,8 +1,3 @@
-var lowCounter = 0;
-var highCounter = 0;
-var rotTrialNum = 0;
-var colTrialNum = 0;
-var rotArray = [];
 var startTimerButton = document.querySelector('.startTimer');
 var pauseTimerButton = document.querySelector('.pauseTimer');
 var timerDisplay = document.querySelector('.timer');
@@ -13,7 +8,6 @@ var tInterval;
 var savedTime;
 var paused = 0;
 var running = 0;
-var holdTime;
 function startTimer(){
   if(!running){
     startTime = new Date().getTime();
@@ -67,43 +61,7 @@ function getShowTime(){
   var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
 //hours = (hours < 10) ? "0" + hours : hours;
   //minutes = (minutes < 10) ? "0" + minutes : minutes;
-  seconds = (seconds < 10) ? "0" + seconds : seconds;
+  //seconds = (seconds < 10) ? "0" + seconds : seconds;
   milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-  holdTime = seconds + ':' + milliseconds;
-  timerDisplay.innerHTML = holdTime;    
+  timerDisplay.innerHTML = seconds + ':' + milliseconds;
 }
-
-function decreaseLow(){ 
-    if (lowCounter != 0) {
-            document.getElementById("low").innerHTML = --lowCounter;
-        }
-}
-function increaseLow(){
-    document.getElementById("low").innerHTML = ++lowCounter;
-}
-function decreaseHigh() {  
-    if(highCounter != 0)
-        {
-            document.getElementById("high").innerHTML = --highCounter;
-        }
-}
-function increaseHigh(){
-    document.getElementById("high").innerHTML = ++highCounter;
-}
-function startRotTrial(){
-    document.getElementById("rotTrialNum").innerHTML = ++rotTrialNum;
-    startTimer();
-}
-function stopRotTrial(){
-    pauseTimer();
-}
-function startColTrial()
-{
-    document.getElementById("colTrialNum").innerHTML = ++colTrialNum;
-    startTimer();
-}
-function stopColTrial()
-{
-    pauseTimer();
-}
-

@@ -15,7 +15,7 @@ body {
     }
 div{
     width:30%;
-    border-style: solid;
+ 
     display: inline-block
 }
 .teamNum{
@@ -99,17 +99,48 @@ btn:hover {
 }
 .rotationalControl{
     text-align: center;
-    width:40%
+    width:20%
 }
 .colorSelection{
     text-align: center;
     width: 40%;
 }
 .table{
-    width: 50.9%;
+    width: 90%;
 }
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse; 
-    padding: .5% 2% .5% 2%;
+    text-align: center;
+}
+th{
+    font-size: 20px;
+}
+table{
+    width: 100%;
+}
+tr{
+    
+}
+.startButton
+{
+    background-color: lawngreen;
+    padding: 1% 14%;
+    font-size: 20px;
+    float: left;
+}
+.startButton:hover{
+    background-color: #5FBF00
+}
+.stopButton
+{
+    float: right;
+    background-color: red
+}
+.stopButton:hover{
+    background-color: #BC0000
+}
+.btn{
+    padding: 0% 2%;
+    width: 80%;
 }
