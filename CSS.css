@@ -15,8 +15,8 @@ body {
     }
 div{
     width:30%;
- 
-    display: inline-block
+    display: inline-block;
+    border: 1px solid black;
 }
 .teamNum{
     float: left;
@@ -39,7 +39,7 @@ div{
 }
 
 .low{
-    width: 25%;
+    width: 21%;
     text-align: center;
 }
 
@@ -87,8 +87,14 @@ btn:hover {
 .highDec{
     padding: 2.9% 5% 2.9% 5%;
 }
-
+.startGame{
+    position: relative;
+    left: 17%;
+    width: 20%;
+    display: inline-block;
+    font-size: 75px;
 }
+
 .highInc{
     padding: 2.9% 5% 2.9% 5%;
 }
@@ -108,20 +114,6 @@ btn:hover {
 .table{
     width: 90%;
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse; 
-    text-align: center;
-}
-th{
-    font-size: 20px;
-}
-table{
-    width: 100%;
-}
-tr{
-    
-}
 .startButton
 {
     background-color: lawngreen;
@@ -129,18 +121,76 @@ tr{
     font-size: 20px;
     float: left;
 }
-.startButton:hover{
-    background-color: #5FBF00
-}
-.stopButton
+.resetBtn
 {
     float: right;
-    background-color: red
-}
-.stopButton:hover{
-    background-color: #BC0000
+    background-color: #FFDB3A;
 }
 .btn{
     padding: 0% 2%;
     width: 80%;
+}
+.dirving{
+    width: 1%;
+}
+.startGameBtn{
+    padding: 10%;
+    background-color: magenta;
+    font-size: 50px;
+}
+.colon{
+    display:none;
+    width:10%;
+    float:left;
+    text-align: center;
+    font-size: 78px;
+}
+span{
+    display:inline-block;
+    float:left;
+    font-size: 78px;
+}
+.timer{
+    text-align: center;
+    padding:1.5%;
+    width:100%;
+}
+.timerBox{
+    padding: 1%;
+}
+.box {
+    width:20%;
+    text-align:center;
+    padding-left: 1.95%;
+    padding-right:1.95%;
+}
+
+.box select {
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.rating{
+    text-align: center;
+}
+.submit{
+    padding:.75% 1.25% .55% 1.25%;
+    float: right;
+    background-color: darkorchid;
+}
+.push{
+    padding-top: 1%;
+    
 }
