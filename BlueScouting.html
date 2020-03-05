@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html >
+    
+<head>
+	<title>Scouting Code</title>
+    <link rel="stylesheet" href="BlueCSS.css">
+    <script src="BlueJavaScrip.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div class="teamNum">Team Number:
+            <div id = "teamNum" contenteditable="true" class = "numPos">2875</div>
+        </div>
+        <div class= "container pos">
+        <div id = "pos" class = "posType" onclick="changePos()">Left</div>
+        <div class="startPos">Starting Position:</div>
+        </div>
+    </div>
+    <br><br>
+    <div class = "container">
+        <div class = "low tinyDiv">Low Ball
+            <div class="buttonDiv">
+                <btn type="button" class="lowDec" onclick = "decreaseLow()">&#60;</btn>
+                <div href="#" class = "display lowDis" id="low">0</div>
+                <btn type="button" class="lowInc" onclick = "increaseLow()">&#62;</btn>
+            </div>   
+            <input type="checkbox" name="verLow" id ="verLow" onclick="setAutoLow()">
+            <label for="verLow"> Verify Low Auto/Baseline</label><br>
+        </div>
+        
+        <div class="startGame" id="gameTimeBox">
+            <div class="tmp">
+            <btn type="button" class= startGameBtn id = "gameBtn" onclick = "getElementById('gameBtn').style.display = 'block'; this.style.display = 'none';getElementById('minuteLabel').style.display = 'block';startGame()">Start Game</btn>
+                <div class = "timerDiv"><span class="disTime" id="minute"></span><div class="colon" id="minuteLabel">:</div><span class="disTime" id="second"></span></div> 
+            </div>
+        </div>
+    
+    
+        <div class = "high tinyDiv">High Ball
+            <div class="buttonDiv">
+                <btn type="button" class="highDec" onclick = "decreaseHigh()">&#60;</btn>
+                <div href="#" class = "display highDis" id="high">0</div>
+                <btn type="button" class="highInc" onclick = "increaseHigh()">&#62;</btn>
+            </div>  
+            <input type="checkbox" name="verHigh" id="verHigh" onclick="setAutoHigh()">
+            <label for="verLow"> Verify High Auto/Baseline</label><br>
+        </div>
+    </div>
+    
+   
+ <div class="container timerBox"> 
+                <div class="timerBox tinyDiv">
+                    <div class="timer">Rotational Control</div>
+                <br>
+                <div class="timer" id="timerLabel1">00:00.00</div>
+                <br>
+                <btn type="button" class="startButton" onmouseover="hover(this)" onmouseout="noHover(this)" onclick="changeColor(this);start_stop(this)" value="START" id="start1">Start</btn>
+                <btn type="button" class="startButton resetBtn" onclick="reset(this)" value="RESET" id="reset1">Reset</btn>
+                    <div class="container">
+                        <input type="checkbox" name="verRot" id="verRotate">
+                        <label for="verRotate"> Verify Rotational Control</label>
+                    </div>
+                </div>
+                
+                <div class="timerBox tinyDiv">
+                    <div class="timer">Color Recognition</div>
+                <br>
+                <div class="timer" id="timerLabel2">00:00.00</div>
+                <br>
+                <btn type="button" class="startButton" onmouseover="hover(this)" onmouseout="noHover(this)" on onclick="changeColor(this);hover(this);start_stop(this)" value="START" id="start2">Start</btn>
+                <btn type="button" class="startButton resetBtn" onclick="reset(this)" value="RESET" id="reset2">Reset</btn>
+                    <div class="container">
+                        <input type="checkbox" name="verColor" id="verColor">
+                        <label for="verColor"> Verify Color Selection</label>
+                    </div>
+                </div>
+                
+                <div class="timerBox tinyDiv">
+                    <div class="timer">Climb</div>
+                <br>
+                <div class="timer" id="timerLabel3">00:00.00</div>
+                <br>
+                <btn type="button" class="startButton" onmouseover="hover(this)" onmouseout="noHover(this)" onclick="changeColor(this);hover(this);start_stop(this)" value="START" id="start3">Start</btn>
+                <btn type="button" class="startButton resetBtn" onclick="reset(this)" value="RESET" id="reset3">Reset</btn>
+                    <div class="container">
+                        <input type="checkbox" name="verClimb" id="verClimb">
+                        <label for="verClimb"> Verify Climb</label>
+                    </div>
+                </div>
+            
+        
+    <script src = "JavaScrip.js"></script>
+    </div>
+    <br><br>
+<div class="rating container">       
+<div class="box tinyDiv">
+    Driving
+        <select id="driving">
+        <option value="nullDriving">N/A</option>
+        <option value="horribleDriving">Horrible</option>
+        <option value="badDirving">Bad</option>
+        <option value="goodDriving">Good</option>
+        <option value="amazingDriving">Amazing</option>
+        </select>
+    </div>
+    <div class="box tinyDiv">
+         Bot
+        <select id="bot">
+        <option value="nullBot">N/A</option>
+        <option value="horribleBot">Horrible</option>
+        <option value="badBot">Bad</option>
+        <option value="goodBot">Good</option>
+        <option value="amazingBot">Amazing</option>
+        </select>
+</div>
+    <div class="box tinyDiv">
+         Drive Train
+        <select id="dTrain">
+        <option value="nullDTrain">N/A</option>
+        <option value="horribleDTrain">Horrible</option>
+        <option value="badDTrain">Bad</option>
+        <option value="goodDTrain">Good</option>
+        <option value="amazingDTrain">Amazing</option>
+        </select>
+</div>
+    <div class="box tinyDiv">
+         Climb Pos
+        <select id="climbPos">
+        <option value="nullClimb">N/A</option>
+        <option value="horribleClimb">Left</option>
+        <option value="badClimb">Middle</option>
+        <option value="goodClimb">Right</option>
+        </select>
+</div>
+    <div class="box tinyDiv">
+         Did it Die?
+        <select id="die">
+        <option value = "nullDie">N/A</option>
+        <option value="died">Yes</option>
+        <option value="didNotDie">No</option>
+        </select>
+</div>
+</div>
+    <div class="container push">
+    <btn type="button" class="startBtn submit" onclick="calcInfo();pushInfo();wipe()">Submit</btn>
+    </div>
+</body>
+
+</html>
